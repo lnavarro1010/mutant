@@ -39,7 +39,7 @@ public class AdnController {
 		    	return new ResponseEntity <Adn>(adnService.guardarAdn(adn),HttpStatus.OK);
 		    }
 		}else {
-			return new ResponseEntity <Adn>(new Adn(),HttpStatus.ALREADY_REPORTED);
+			return new ResponseEntity <Adn>(new Adn(null, null, false),HttpStatus.ALREADY_REPORTED);
 			
 		}
 	}

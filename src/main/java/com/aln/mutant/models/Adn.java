@@ -36,5 +36,14 @@ public class Adn {
     public void setHuman(boolean isHuman) {
         this.isHuman = isHuman;
     }
-    
+    public Adn(Long id, String[] adn, boolean isHuman) {
+		super();
+		this.id = id;
+		this.adn = adn;
+		this.isHuman = isHuman;
+	}
+    public Adn() {
+		super();
+		
+	}
 }
